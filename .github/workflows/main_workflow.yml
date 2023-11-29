@@ -1,6 +1,9 @@
 name: Run Python Script and Commit
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'input/**'
 
 jobs:
   build-and-commit:
